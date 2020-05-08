@@ -11,14 +11,51 @@ h1 {
   align-items: center;
 }
 
-.box {
-  width: 396px;
-  height: 396px;
-  background-color: #ffff;
+.container {
+  width: 480px;
+  height: 480px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 10px;
+}
+
+.input-border input {
+  width: 30px;
+}
+
+#input_brdr_tl {
+  position: absolute;
+  top: 0;
+  left: 0
+}
+
+#input_brdr_tr {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#input_brdr_br {
+  position: absolute;
+  bottom: 0;
+  right: 0
+}
+
+#input_brdr_bl {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.box {
+  width: 396px;
+  height: 396px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffff;
+  border-radius: 0px;
   border: 1px solid #333;
 }
