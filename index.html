@@ -5,29 +5,55 @@
   </head>
   <body>
     <h1>Border Radius Previewer</h1>
-    <div class="container">
-      <div class="input-border" id="input_brdr_tl">
-        <input type="text" id="input_tl" maxlength="3" value="0" onkeyup="changeBorderRadius()" />
-      </div>
-
-      <div class="input-border" id="input_brdr_tr">
-        <input type="text" id="input_tr" maxlength="3" value="0" onkeyup="changeBorderRadius()" />
-      </div>
-
-      <div class="bottom-line">
-        <div class="input-border" id="input_brdr_bl">
-          <input type="text" id="input_bl" maxlength="3" value="0" onkeyup="changeBorderRadius()" />
+      <div class="container">
+        
+        <div class="input-border" id="input_brdr_tl">
+          <input type="text" id="input_tl" maxlength="3" value="0" onkeyup="changeBorderRadius()" />
         </div>
-        <button id="copy" onclick="copyToClipboard()">Copy to Clipboard</button>
-        <div class="input-border" id="input_brdr_br">
-          <input type="text" id="input_br" maxlength="3" value="0" onkeyup="changeBorderRadius()" />
-        </div>
-      </div>
-      
-      <div class="box" id="box-div">
 
+        <div class="input-border" id="input_brdr_tr">
+          <input type="text" id="input_tr" maxlength="3" value="0" onkeyup="changeBorderRadius()" />
+        </div>
+
+        <div class="bottom-line">
+          <div class="input-border" id="input_brdr_bl">
+            <input type="text" id="input_bl" maxlength="3" value="0" onkeyup="changeBorderRadius()" />
+          </div>
+          <button id="copy" onclick="copyToClipboard()">Copy to Clipboard</button>
+          <div class="input-border" id="input_brdr_br">
+            <input type="text" id="input_br" maxlength="3" value="0" onkeyup="changeBorderRadius()" />
+          </div>
+        </div>
+        
+        <div class="box" id="box-div"></div>
       </div>
-    </div>
+      <div class="toggle">
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round" onclick="toggleAdvanced()"></span>
+        </label>
+        <p id="advanced">Advanced Mode</p>
+      </div>
+    
+      <div class="footer" id="footer">
+        boder-radius:
+        <input type="text" class="input-adv" id="adv-tl-rx" maxlength="3" value="100" onkeyup="changeBorderAdvanced()"/>
+        % 
+        <input type="text" class="input-adv" id="adv-tr-rx" maxlength="3" value="100" onkeyup="changeBorderAdvanced()"/>
+        % 
+        <input type="text" class="input-adv" id="adv-br-rx" maxlength="3" value="100" onkeyup="changeBorderAdvanced()"/>
+        % 
+        <input type="text" class="input-adv" id="adv-bl-rx" maxlength="3" value="100" onkeyup="changeBorderAdvanced()"/>
+        % / 
+        <input type="text" class="input-adv" id="adv-tl-ry" maxlength="3" value="100" onkeyup="changeBorderAdvanced()"/>
+        % 
+        <input type="text" class="input-adv" id="adv-tr-ry" maxlength="3" value="100" onkeyup="changeBorderAdvanced()"/>
+        % 
+        <input type="text" class="input-adv" id="adv-br-ry" maxlength="3" value="100" onkeyup="changeBorderAdvanced()"/>
+        % 
+        <input type="text" class="input-adv" id="adv-bl-ry" maxlength="3" value="100" onkeyup="changeBorderAdvanced()"/>
+        % 
+      </div>
   </body>
   <script src="index.js"></script>
 </html>
